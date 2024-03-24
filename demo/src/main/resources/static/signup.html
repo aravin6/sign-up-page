@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<title>::Signup Page</title>
+
+	<style>
+		.container {
+
+			margin: auto;
+			width: 50%;
+			border: 3px solid green;
+			padding: 10px;
+			text-align: center;
+
+		}
+	</style>
+
+</head>
+
+<body>
+
+	<div class="container">
+
+		<form action="/signup" method="post">
+
+			<label>Username : </label><input type="text" name="username" placeholder="Enter user name"><br><br>
+			<label>Email : </label><input type="email" name="email" placeholder="Enter mail id"><br><br>
+			<label>Password : </label><input type="password" name="password" placeholder="Enter password"><br><br>
+			<label>Enter age : </label><input type="number" name="age" placeholder="Enter Age"><br><br>
+			<label>Date Of Birth: </label><input type="date" name="dob"><br><br>
+
+			<label>Select location : </label>
+			<select name="location">
+
+				<option value="sharjah">Sharjah,UAE</option>
+				<option value="kochi">Kochi,India</option>
+
+			</select><br><br>
+
+			<label>Select gender : </label>
+			<label>Male</label><input type="checkbox" name="gender">
+			<label>Female</label><input type="checkbox" name="gender">
+			<label>Others</label><input type="checkbox" name="gender"><br><br>
+
+			<label>Employment status : </label>
+			<input type="radio" name="emp_status"> Student
+			<input type="radio" name="emp_status"> Employed<br><br>
+
+			<label>Upload profile picture : </label>
+			<input type="file" name="image_path" accept="image/*"><br><br>
+
+			<input type="submit" value="Signup">
+
+
+
+
+
+		</form>
+
+	</div>
+
+
+</body>
+
+</html>
